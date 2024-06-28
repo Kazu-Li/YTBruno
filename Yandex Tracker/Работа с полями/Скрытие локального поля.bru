@@ -1,0 +1,17 @@
+meta {
+  name: Скрытие локального поля
+  type: http
+  seq: 1
+}
+
+patch {
+  url: https://st-api.yandex-team.ru/v2/queues/<Ключ очереди>/localFields/<Ключ поля>
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+        "hidden":true
+  }
+}
